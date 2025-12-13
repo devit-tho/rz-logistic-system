@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "installCommand": "corepack enable && yarn set version berry && yarn install --immutable",
+  "buildCommand": "yarn workspaces foreach --all --topological-dev --exclude @monorepo/admin --exclude management-system run build",
+  "outputDirectory": "dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "main.js" }]
+}
