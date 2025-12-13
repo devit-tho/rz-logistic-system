@@ -1,0 +1,15 @@
+node_modules
+dist
+
+.turbo
+.yarn/cache
+.yarn/install-state.gz
+
+.env.*
+*.env
+
+out
+out-backend
+out-admin
+
+*.pdf

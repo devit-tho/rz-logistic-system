@@ -1,0 +1,59 @@
+model TruckingManagement {
+  id        String      @id @db.ObjectId @default(auto())  @map("_id") 
+
+  // Fields
+
+  truckingType           TruckingType @default(CONTAINER)
+  driverId               String?          @map("driver_id")
+  driver                 Driver?       @relation(fields: [driverId], references: [id], onDelete: Cascade)
+  truckPlateNumber       String    @map("truck_plate_no")
+  fee                    Float     @default(0)
+
+  // Fields (many of these reflect data from Cargo, but are stored here for tracking or denormalization)
+  // containerNumber        String    // From Cargo.containerNo
+  // containerSealNumber    String    // From Cargo.containerSealNumber
+  // containerType          String    // From Cargo.containerType (as string)
+
+  // quantity               Int?      // From Cargo.quantity
+  // grossweight            Float?    // From Cargo.grossweight
+  jobsite                String?
+  pickedUpDate           DateTime?  @map("pickedup_date")
+  arrivedDate            DateTime?  @map("arrived_date")
+  unloadedDate           DateTime?  @map("unloaded_date")
+  truckStandby           String?    @map("truck_standby") // Could change to Float if you want to store hours
+
+  packages               Int       @default(0)
+
+  isLost                 Boolean   @default(false) @map("is_lost")
+  isDamaged              Boolean   @default(false) @map("is_damaged")
+
+  returnEmptyToDepotDate DateTime?  @map("return_empty_to_depot_date")
+  remark                 String?   @map("Remark")
+
+  userId                 String       @map("user_id")
+  user                   User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  shipmentId             String      @map("shipment_id")
+  shipment               Shipment @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+  supplierId             String       @map("supplier_id")
+  supplier               Supplier  @relation(fields: [supplierId], references: [id], onDelete: Cascade)
+  cargoId                String       @map("cargo_id")
+  cargo                  Cargo     @relation(fields: [cargoId], references: [id], onDelete: Cascade)
+
+  createdAt              DateTime  @default(now()) @map("created_at")
+
+  @@map("trucking_managements")
+}
+
+model Driver {
+  id        String      @id @db.ObjectId @default(auto())  @map("_id") 
+  name                   String    @unique
+  phone                  String    
+  idCard                 String?   @unique @map("id_card")
+  code                   String?   @unique @map("code")
+
+  createdAt              DateTime  @default(now()) @map("created_at")
+
+  truckings   TruckingManagement[]
+
+  @@map("drivers")
+}

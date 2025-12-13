@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = []
+}
+
+// generator erd {
+//   provider = "prisma-erd-generator"
+//   output   = "../erd.pdf"
+// }
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+enum ShipmentStatus {
+  PENDING
+  IN_TRANSIT
+  DELIVERED
+  CANCELLED
+  ON_HOLD
+}
+
+enum ContainerSize {
+  FT20
+  FT40
+  FT45
+}
+
+enum ContainerType {
+  DRY
+  REEFER
+  OPEN_TOP
+  FLAT_RACK
+  TANK
+}
+
+enum CargoType {
+  CONTAINER
+  BREAK_BULK
+  OUT_OF_GAUGE
+  GENERAL
+  HAZARDOUS
+  REFRIGERATED
+  OVERSIZED
+  LIQUID
+  FRAGILE
+  OTHER
+}
+
+enum TruckingType {
+  CONTAINER                // Standard 20ft/40ft container transport
+  FLATBED                  // For oversized or irregular cargo
+  REEFER                   // Refrigerated transport
+  BOX_TRUCK                // Enclosed box for dry goods or retail
+  HEAVY_HAUL               // For transformers, heavy machinery, oversized loads
+  TIPPER                   // Construction materials (soil, sand, etc.)
+  CAR_CARRIER              // Vehicle transport
+  CROSS_BORDER             // International trucking (e.g., Cambodia ↔ Vietnam)
+  LTL                      // Less than truckload (shared cargo)
+  FTL                      // Full truckload (one shipment per truck)
+  LAST_MILE                // Final delivery leg to customer
+  TANKER                   // Liquid or gas (fuel, chemicals)
+  LOWBED                   // Specialized low-deck trailer for tall/heavy equipment
+  SIDE_LOADER              // Container delivery using swinglift/side lifter
+  HOTSHOT                  // Urgent/small load, often pickup truck + trailer
+}

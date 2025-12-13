@@ -1,0 +1,18 @@
+model Contact {
+  id        String      @id @db.ObjectId @default(auto())  @map("_id") 
+  name       String?
+  position   String?
+  email      String?
+  mobile     String?
+  fax        String?
+  skype      String?
+  wechat     String?
+  whatsapp   String?
+  telegram   String?
+
+  customer Customer?
+  shippingLine ShippingLine?
+  supplier Supplier?
+
+  @@map("contacts")
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "@monorepo/typescript-config/base.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "strict": false,
+    "strictNullChecks": false
+  },
+  "exclude": ["node_modules", "dist"]
+}

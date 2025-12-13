@@ -1,0 +1,18 @@
+// Customer receiving the shipment
+model Customer {
+  id        String      @id @db.ObjectId @default(auto())  @map("_id") 
+  organization String? @map("organization") // Optional - organization name
+  email       String?
+  phone       String?
+  address     String?
+  contactId   String     @map("contact_id") @unique
+  contact     Contact? @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now()) @map("created_at")
+  user   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String      @map("user_id")
+
+  shipments Shipment[]
+
+  @@map("customers")
+}
+

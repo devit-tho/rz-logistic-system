@@ -1,0 +1,338 @@
+[
+  {
+    "date": "2025-06-01",
+    "shipments": 120,
+    "cargos": 85,
+    "truckings": 45,
+    "customers": 210
+  },
+  {
+    "date": "2025-06-01",
+    "shipments": 135,
+    "cargos": 92,
+    "truckings": 50,
+    "customers": 188
+  },
+  {
+    "date": "2025-06-02",
+    "shipments": 110,
+    "cargos": 73,
+    "truckings": 48,
+    "customers": 200
+  },
+  {
+    "date": "2025-06-02",
+    "shipments": 142,
+    "cargos": 80,
+    "truckings": 53,
+    "customers": 195
+  },
+  {
+    "date": "2025-06-03",
+    "shipments": 125,
+    "cargos": 77,
+    "truckings": 49,
+    "customers": 205
+  },
+  {
+    "date": "2025-06-03",
+    "shipments": 130,
+    "cargos": 90,
+    "truckings": 47,
+    "customers": 199
+  },
+  {
+    "date": "2025-06-04",
+    "shipments": 138,
+    "cargos": 87,
+    "truckings": 51,
+    "customers": 215
+  },
+  {
+    "date": "2025-06-04",
+    "shipments": 118,
+    "cargos": 76,
+    "truckings": 46,
+    "customers": 190
+  },
+  {
+    "date": "2025-06-05",
+    "shipments": 122,
+    "cargos": 88,
+    "truckings": 50,
+    "customers": 205
+  },
+  {
+    "date": "2025-06-05",
+    "shipments": 140,
+    "cargos": 91,
+    "truckings": 52,
+    "customers": 198
+  },
+  {
+    "date": "2025-06-06",
+    "shipments": 124,
+    "cargos": 83,
+    "truckings": 47,
+    "customers": 210
+  },
+  {
+    "date": "2025-06-06",
+    "shipments": 131,
+    "cargos": 86,
+    "truckings": 49,
+    "customers": 200
+  },
+  {
+    "date": "2025-06-07",
+    "shipments": 136,
+    "cargos": 89,
+    "truckings": 53,
+    "customers": 193
+  },
+  {
+    "date": "2025-06-07",
+    "shipments": 119,
+    "cargos": 79,
+    "truckings": 48,
+    "customers": 208
+  },
+  {
+    "date": "2025-06-08",
+    "shipments": 121,
+    "cargos": 84,
+    "truckings": 46,
+    "customers": 202
+  },
+  {
+    "date": "2025-06-08",
+    "shipments": 128,
+    "cargos": 82,
+    "truckings": 50,
+    "customers": 207
+  },
+  {
+    "date": "2025-06-09",
+    "shipments": 132,
+    "cargos": 90,
+    "truckings": 52,
+    "customers": 199
+  },
+  {
+    "date": "2025-06-09",
+    "shipments": 117,
+    "cargos": 74,
+    "truckings": 45,
+    "customers": 212
+  },
+  {
+    "date": "2025-06-10",
+    "shipments": 126,
+    "cargos": 81,
+    "truckings": 48,
+    "customers": 204
+  },
+  {
+    "date": "2025-06-10",
+    "shipments": 139,
+    "cargos": 93,
+    "truckings": 51,
+    "customers": 197
+  },
+  {
+    "date": "2025-06-11",
+    "shipments": 123,
+    "cargos": 80,
+    "truckings": 47,
+    "customers": 209
+  },
+  {
+    "date": "2025-06-11",
+    "shipments": 134,
+    "cargos": 88,
+    "truckings": 50,
+    "customers": 201
+  },
+  {
+    "date": "2025-06-12",
+    "shipments": 137,
+    "cargos": 85,
+    "truckings": 49,
+    "customers": 203
+  },
+  {
+    "date": "2025-06-12",
+    "shipments": 115,
+    "cargos": 70,
+    "truckings": 46,
+    "customers": 214
+  },
+  {
+    "date": "2025-06-13",
+    "shipments": 129,
+    "cargos": 91,
+    "truckings": 52,
+    "customers": 196
+  },
+  {
+    "date": "2025-06-13",
+    "shipments": 133,
+    "cargos": 87,
+    "truckings": 48,
+    "customers": 206
+  },
+  {
+    "date": "2025-06-14",
+    "shipments": 116,
+    "cargos": 78,
+    "truckings": 45,
+    "customers": 213
+  },
+  {
+    "date": "2025-06-14",
+    "shipments": 141,
+    "cargos": 95,
+    "truckings": 53,
+    "customers": 192
+  },
+  {
+    "date": "2025-06-15",
+    "shipments": 127,
+    "cargos": 84,
+    "truckings": 49,
+    "customers": 200
+  },
+  {
+    "date": "2025-06-15",
+    "shipments": 132,
+    "cargos": 89,
+    "truckings": 50,
+    "customers": 202
+  },
+  {
+    "date": "2025-06-16",
+    "shipments": 118,
+    "cargos": 75,
+    "truckings": 47,
+    "customers": 211
+  },
+  {
+    "date": "2025-06-16",
+    "shipments": 136,
+    "cargos": 92,
+    "truckings": 51,
+    "customers": 194
+  },
+  {
+    "date": "2025-06-17",
+    "shipments": 120,
+    "cargos": 79,
+    "truckings": 46,
+    "customers": 208
+  },
+  {
+    "date": "2025-06-17",
+    "shipments": 138,
+    "cargos": 90,
+    "truckings": 52,
+    "customers": 200
+  },
+  {
+    "date": "2025-06-18",
+    "shipments": 125,
+    "cargos": 86,
+    "truckings": 48,
+    "customers": 206
+  },
+  {
+    "date": "2025-06-18",
+    "shipments": 131,
+    "cargos": 83,
+    "truckings": 50,
+    "customers": 199
+  },
+  {
+    "date": "2025-06-19",
+    "shipments": 134,
+    "cargos": 88,
+    "truckings": 49,
+    "customers": 203
+  },
+  {
+    "date": "2025-06-19",
+    "shipments": 117,
+    "cargos": 77,
+    "truckings": 45,
+    "customers": 210
+  },
+  {
+    "date": "2025-06-20",
+    "shipments": 122,
+    "cargos": 81,
+    "truckings": 47,
+    "customers": 204
+  },
+  {
+    "date": "2025-06-20",
+    "shipments": 140,
+    "cargos": 94,
+    "truckings": 51,
+    "customers": 195
+  },
+  {
+    "date": "2025-06-21",
+    "shipments": 126,
+    "cargos": 82,
+    "truckings": 48,
+    "customers": 207
+  },
+  {
+    "date": "2025-06-21",
+    "shipments": 129,
+    "cargos": 85,
+    "truckings": 50,
+    "customers": 198
+  },
+  {
+    "date": "2025-06-22",
+    "shipments": 135,
+    "cargos": 87,
+    "truckings": 49,
+    "customers": 202
+  },
+  {
+    "date": "2025-06-22",
+    "shipments": 115,
+    "cargos": 72,
+    "truckings": 46,
+    "customers": 212
+  },
+  {
+    "date": "2025-06-23",
+    "shipments": 123,
+    "cargos": 80,
+    "truckings": 48,
+    "customers": 205
+  },
+  {
+    "date": "2025-06-23",
+    "shipments": 137,
+    "cargos": 90,
+    "truckings": 51,
+    "customers": 193
+  },
+  {
+    "date": "2025-06-24",
+    "shipments": 119,
+    "cargos": 78,
+    "truckings": 47,
+    "customers": 209
+  },
+  {
+    "date": "2025-06-24",
+    "shipments": 142,
+    "cargos": 96,
+    "truckings": 52,
+    "customers": 190
+  }
+]

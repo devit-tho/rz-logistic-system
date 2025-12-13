@@ -1,0 +1,29 @@
+{
+  "name": "management-system",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/david-tho/logistic-system.git",
+  "author": "kimsang-thanh <kimthclo@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev": "yarn && turbo dev",
+    "lint": "turbo lint",
+    "build": "turbo build",
+    "output:admin": "turbo prune @monorepo/admin --docker --out-dir out-admin",
+    "output:backend": "turbo prune @monorepo/backend --docker --out-dir out-backend"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "resolutions": {
+    "react-hook-form": "^7.50.0"
+  },
+  "packageManager": "yarn@4.9.1"
+}

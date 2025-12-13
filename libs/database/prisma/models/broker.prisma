@@ -1,0 +1,18 @@
+model Broker {
+  id        String      @id @db.ObjectId @default(auto())  @map("_id") 
+
+  organization String
+  address   String?
+  // Optional fields for broker details
+  name      String
+  email     String?
+  phone     String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  userId String  @map("user_id")
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  shipments Shipment[]
+
+  @@map("brokers")
+}

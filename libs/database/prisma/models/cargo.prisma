@@ -1,0 +1,31 @@
+model Cargo {
+  id        String      @id @db.ObjectId @default(auto())  @map("_id") 
+  name                String     @map("cargo_name")
+  type                CargoType?
+  containerNo         String?     @map("container_no")
+  containerSealNumber String?     @map("container_seal_no")
+  containerType       ContainerType?
+  containerSize       ContainerSize?
+  description         String?
+  hsCode              String?    @map("hs_code")
+  quantity            Int        @default(0)
+  value               Float      @default(0)
+  origin              String?
+  destination         String?
+  length              Float      @default(0)
+  width               Float      @default(0)
+  height              Float      @default(0)
+  grossweight         Float      @default(0)
+  cbm                 Float      @default(0)
+
+  shipmentId          String        @map("shipment_id") // Now required
+  shipment            Shipment   @relation("ShipmentToCargos", fields: [shipmentId], references: [id])
+  userId              String        @map("user_id")
+  user                User       @relation(fields: [userId], references: [id])
+
+  trucking            TruckingManagement[]
+
+  createdAt           DateTime   @default(now()) @map("created_at")
+
+  @@map("cargos")
+}

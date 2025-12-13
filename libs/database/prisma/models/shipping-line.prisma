@@ -1,0 +1,23 @@
+// The shipping line company
+model ShippingLine {
+  id        String      @id @db.ObjectId @default(auto())  @map("_id") 
+  organization String @map("organization")
+  phone String?
+  code  String?
+  address String?
+  email String?
+  website String?
+  fax   String?
+  
+  contactId String     @map("contact_id") @unique
+  contact   Contact? @relation(fields: [contactId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  userId String  @map("user_id")
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  shipments Shipment[]
+
+  @@map("shippling_line")
+}

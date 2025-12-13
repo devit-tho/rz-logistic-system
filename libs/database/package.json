@@ -1,0 +1,40 @@
+{
+  "name": "@monorepo/database",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development prisma generate && tsup --watch",
+    "build": "cross-env NODE_ENV=development prisma generate && tsup",
+    "db:push": "dotenv -e .env.development -- prisma db push",
+    "db:gen": "cross-env NODE_ENV=development prisma generate",
+    "db:studio": "dotenv -e .env.development -- prisma studio",
+    "db:seed": "cross-env NODE_ENV=development ts-node seeds/index.ts",
+    "db:format": "prisma format",
+    "db:reset": "dotenv -e .env.development -- prisma migrate reset",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.10.1"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.6.0",
+    "@types/node": "^22.15.30",
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^8.0.0",
+    "prisma": "^6.8.2",
+    "prisma-erd-generator": "^2.0.4",
+    "puppeteer": "^24.14.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

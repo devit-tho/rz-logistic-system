@@ -1,0 +1,8 @@
+{
+  "extends": "@monorepo/typescript-config/base.json",
+  "compilerOptions": {
+    "removeComments": true,
+    "strict": true
+  },
+  "include": ["src"]
+}
