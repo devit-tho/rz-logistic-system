@@ -1,3 +1,4 @@
+import prisma from '@monorepo/database';
 import { CreateOrUpdateContactSchema } from '@monorepo/schemas';
 import { Injectable } from '@nestjs/common';
 

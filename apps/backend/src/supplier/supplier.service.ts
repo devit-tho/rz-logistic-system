@@ -1,5 +1,5 @@
 import { ContactService } from '@/contact/contact.service';
-import { Prisma } from '@monorepo/database';
+import prisma, { Prisma } from '@monorepo/database';
 import { AllSuppliers, UserWithoutPassword } from '@monorepo/entities';
 import {
   CreateOrUpdateSupplierSchema,

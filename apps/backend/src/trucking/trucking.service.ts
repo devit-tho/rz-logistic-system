@@ -1,4 +1,4 @@
-import { Prisma } from '@monorepo/database';
+import prisma, { Prisma } from '@monorepo/database';
 import {
   AllTruckingManagements,
   UserWithoutPassword,
