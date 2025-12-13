@@ -25,8 +25,8 @@ function LoginPage() {
   const returnTo = searchParams.get("returnTo");
 
   const defaultValues: Omit<LoginSchema, "device"> = {
-    email: "",
-    password: "",
+    email: "sarona-admin@gmail.com",
+    password: "sarona123",
   };
 
   const form = useForm<Omit<LoginSchema, "device">>({
