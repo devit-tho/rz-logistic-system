@@ -46,7 +46,7 @@ for admin and backend you can check at config folder that follow the zod schema.
 for database
 
 ```bash
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/rz_logistic_system
+DATABASE_URL=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>?retryWrites=true&w=majority
 ```
 
 ### Usage
