@@ -1,5 +1,0 @@
-.turbo
-.yarn
-node_modules
-.git
-*.md
