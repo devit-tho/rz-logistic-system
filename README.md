@@ -1,13 +1,13 @@
-## RZ Logistic System
+# RZ Logistic System
 
-### Description
+## Description
 
 This is a logistic system that used to track of shipment, trucking, cargo, and other logistic activities. It is a simple and easy-to-use for operations and management.
 this project is developed for thesis before gradauted.
 
-### Tech Stack
+## Tech Stack
 
-## Frontend
+### Frontend
 
 - React
 - Redux
@@ -16,7 +16,7 @@ this project is developed for thesis before gradauted.
 - Typescript
 - Zod
 
-## Backend
+### Backend
 
 - NestJS
 - Typescript
@@ -24,7 +24,7 @@ this project is developed for thesis before gradauted.
 - Prisma
 - Zod
 
-### Installation
+## Installation
 
 ```bash
 npm install -g yarn
@@ -33,7 +33,7 @@ yarn set version berry
 yarn install
 ```
 
-### Environment
+## Environment
 
 Create a `.env` file in the directory such as:
 
@@ -49,17 +49,17 @@ for database
 DATABASE_URL=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>?retryWrites=true&w=majority
 ```
 
-### Usage
+## Usage
 
 ```bash
 yarn dev
 ```
 
-### License
+## License
 
 MIT
 
-### Seeding
+## Seeding
 
 ```bash
 yarn workspace @monorepo/database db:seed
