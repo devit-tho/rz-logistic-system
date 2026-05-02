@@ -10,6 +10,7 @@ import { ContactModule } from './contact/contact.module';
 import { CustomerModule } from './customer/customer.module';
 import { DriverModule } from './driver/driver.module';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
+import { KeepAliveService } from './keep-alive/keep-alive.service';
 import { ShipmentModule } from './shipment/shipment.module';
 import { ShippingLineModule } from './shipping-line/shipping-line.module';
 import { SupplierModule } from './supplier/supplier.module';
@@ -44,6 +45,6 @@ export class GlobalModule {}
     ShippingLineModule,
     DriverModule,
   ],
-  providers: [{ provide: APP_GUARD, useClass: JwtAuthGuard }],
+  providers: [{ provide: APP_GUARD, useClass: JwtAuthGuard }, KeepAliveService],
 })
 export class AppModule {}
