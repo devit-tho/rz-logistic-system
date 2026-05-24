@@ -9,8 +9,8 @@ export default function Router() {
   const pathname = usePathname();
 
   useEffect(() => {
-    nprogress.configure({ showSpinner: false });
     nprogress.start();
+    nprogress.configure({ showSpinner: false });
     nprogress.done();
   }, [pathname]);
 
